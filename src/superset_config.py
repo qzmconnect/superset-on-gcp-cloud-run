@@ -16,7 +16,7 @@ FEATURE_FLAGS = {
 
 OAUTH_PROVIDERS = [{
     "name": "google",
-    "whitelist": ["@constellationpolitical.com"],
+    "whitelist": ["@qzmarketing.com"],
     "icon": "fa-google",
     "token_key": "access_token",
     "remote_app": {
@@ -27,7 +27,7 @@ OAUTH_PROVIDERS = [{
         "request_token_url": None,
         "access_token_url": "https://accounts.google.com/o/oauth2/token",
         "authorize_url": "https://accounts.google.com/o/oauth2/auth",
-        "authorize_params": {"hd": "constellationpolitical.com"}
+        "authorize_params": {"hd": "qzmarketing.com"}
     }
 }]
 
