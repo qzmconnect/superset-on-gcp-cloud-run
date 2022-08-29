@@ -1,6 +1,6 @@
 #FROM apache/superset:71e3fa1bf350045da9a1c1e89443549c204a3516
-FROM amancevice/superset:1.3.2
-#FROM apache/superset
+#FROM amancevice/superset:1.3.2
+FROM apache/superset
 
 
 COPY superset_config.py /etc/superset/superset_config.py
