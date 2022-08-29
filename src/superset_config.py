@@ -29,7 +29,7 @@ OAUTH_PROVIDERS = [{
         "client_id": os.environ.get("GOOGLE_CLIENT_ID"),
         "client_secret": os.environ.get("GOOGLE_CLIENT_SECRET"),
         "api_base_url": "https://www.googleapis.com/oauth2/v2/",
-        "client_kwargs": {"scope": "email profile"},
+        "client_kwargs": {"scope": "openid email profile"},
         "request_token_url": None,
         "access_token_url": "https://oauth2.googleapis.com/token",
         "authorize_url": "https://accounts.google.com/o/oauth2/auth",
