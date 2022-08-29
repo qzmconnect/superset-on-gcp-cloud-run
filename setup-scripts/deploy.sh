@@ -1,3 +1,6 @@
+gcloud builds submit \
+    --tag $GOOGLE_CLOUD_REGION-docker.pkg.dev/$GOOGLE_CLOUD_PROJECT/superset-repository/superset src/.;
+    
 gcloud run deploy superset \
     --image=$GOOGLE_CLOUD_REGION-docker.pkg.dev/$GOOGLE_CLOUD_PROJECT/superset-repository/superset:latest \
     --allow-unauthenticated \
