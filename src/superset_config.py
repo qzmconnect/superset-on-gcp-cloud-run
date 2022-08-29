@@ -1,8 +1,8 @@
 import os
 
-from flask_appbuilder.security.manager import AUTH_DB, AUTH_OAUTH
+from flask_appbuilder.security.manager import AUTH_OAUTH
 
-from custom_sso_security_manager import CustomSsoSecurityManager
+#from custom_sso_security_manager import CustomSsoSecurityManager
 
 ENABLE_PROXY_FIX=True
 ROW_LIMIT=5000
@@ -31,14 +31,14 @@ OAUTH_PROVIDERS = [{
         "api_base_url": "https://www.googleapis.com/oauth2/v2/",
         "client_kwargs": {"scope": "email profile"},
         "request_token_url": None,
-        "access_token_url": "https://accounts.google.com/o/oauth2/token", #https://oauth2.googleapis.com/token - new url
+        "access_token_url": "https://accounts.google.com/o/oauth2/token",
         "authorize_url": "https://accounts.google.com/o/oauth2/auth",
         "jwks_uri": "https://www.googleapis.com/oauth2/v3/certs",
         "authorize_params": {"hd": "qzmarketing.com"}
     }
 }]
 
-CUSTOM_SECURITY_MANAGER = CustomSsoSecurityManager
+#CUSTOM_SECURITY_MANAGER = CustomSsoSecurityManager
 
 #OAUTH_PROVIDERS = [{
 #   "name": "google",
@@ -64,3 +64,5 @@ CUSTOM_SECURITY_MANAGER = CustomSsoSecurityManager
 #AUTH_ROLE_PUBLIC="Public"
 #AUTH_USER_REGISTRATION = True
 #AUTH_USER_REGISTRATION_ROLE = "Admin"
+
+#https://oauth2.googleapis.com/token - new url
