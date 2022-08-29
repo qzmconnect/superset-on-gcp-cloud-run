@@ -9,7 +9,7 @@ COPY superset_config.py /etc/superset/superset_config.py
 # USER root
 
 # install postgres and bigquery driver
-# RUN pip install psycopg2-binary pandas-gbq pybigquery
+RUN pip install psycopg2-binary pandas-gbq pybigquery authlib
 
 # Switching back to using the `superset` user
 # USER superset
