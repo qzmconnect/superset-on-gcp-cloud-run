@@ -1,5 +1,5 @@
 import os
-
+from flask import session
 from flask_appbuilder.security.manager import AUTH_OAUTH
 
 SECRET_KEY = os.getenv("SUPERSET_SECRET_KEY")
