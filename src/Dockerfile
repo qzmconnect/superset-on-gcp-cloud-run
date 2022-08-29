@@ -5,6 +5,8 @@ FROM apache/superset
 
 COPY superset_config.py /etc/superset/superset_config.py
 
+RUN pip install authlib
+
 # Switching to root to install the required packages
 #USER root
 
