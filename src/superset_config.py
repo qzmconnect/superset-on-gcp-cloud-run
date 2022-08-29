@@ -26,8 +26,8 @@ OAUTH_PROVIDERS = [{
     "icon": "fa-google",
     "token_key": "access_token",
     "remote_app": {
-        "client_id": os.environ.get("GOOGLE_KEY"),
-        "client_secret": os.environ.get("GOOGLE_SECRET"),
+        "client_id": os.environ.get("GOOGLE_CLIENT_ID"),
+        "client_secret": os.environ.get("GOOGLE_CLIENT_SECRET"),
         "api_base_url": "https://www.googleapis.com/oauth2/v2/",
         "client_kwargs": {"scope": "email profile"},
         "request_token_url": None,
